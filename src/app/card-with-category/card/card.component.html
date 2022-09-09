@@ -1,0 +1,16 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid" class="grid1">
+        <div fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let item of product_data">
+            <mat-card class="mat-elevation-z4" fxFlex="25%">
+                <mat-card-content >
+                    <h4>Name : {{item.name}}</h4>
+                    <h4>Price: {{item.price}}</h4>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button class="button" mat-raised-button color="blue" (click)="addToCart(item)">Add to card</button>
+                    <button class="button" mat-raised-button color="accent" (click)="removeFromCart(item)">Remove from Cart</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

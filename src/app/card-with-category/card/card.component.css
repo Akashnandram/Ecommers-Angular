@@ -1,0 +1,10 @@
+.mat-card{
+    margin: 10px 10px 10px 0px;
+    border: 0.5px solid;
+    border-radius: 3px;;
+}
+
+.button{
+    background-color: rgb(20, 30, 226);
+    color: #fff;
+}

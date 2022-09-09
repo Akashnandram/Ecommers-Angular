@@ -1,0 +1,13 @@
+<div *ngFor="let category_item of data">
+    <mat-card class="mat-elevation-z0">
+        <mat-card-header>
+            <mat-card-title>
+                <h2 class="">{{category_item.name}}</h2>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <app-card [product_data]="category_item.productList"></app-card>
+        </mat-card-content>
+    </mat-card>
+</div>
+ 
